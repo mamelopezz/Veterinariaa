@@ -1,38 +1,60 @@
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    margin: 20px;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
+
 h1 {
     text-align: center;
     margin-bottom: 40px;
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 40px;
-}
-th, td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: left;
-}
-.semestre-I { background-color: #e3f2fd; }
-.semestre-II { background-color: #e8f5e9; }
-.semestre-III { background-color: #fff3e0; }
-.semestre-IV { background-color: #f3e5f5; }
-.semestre-V { background-color: #ede7f6; }
-.semestre-VI { background-color: #fbe9e7; }
-.semestre-VII { background-color: #f0f4c3; }
-.semestre-VIII { background-color: #d7ccc8; }
-.semestre-IX { background-color: #c8e6c9; }
-.semestre-X { background-color: #ffecb3; }
 
-.ramo.locked {
-    opacity: 0.4;
-    pointer-events: none;
+.malla-container {
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto;
 }
-.ramo.unlocked {
-    cursor: pointer;
+
+.semestre {
+    width: 18%;
+    min-width: 200px;
+    margin: 0 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+.semestre h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.asignatura {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.asignatura h3 {
+    margin: 0 0 5px 0;
+    font-size: 1em;
+}
+
+.asignatura p {
+    margin: 0;
+    font-size: 0.8em;
+    color: #666;
+}
+
+/* Colores por semestre */
+.semestre-1, .semestre-3, .semestre-5, .semestre-7, .semestre-9 { background-color: #d4edda; }
+.semestre-1 h2, .semestre-3 h2, .semestre-5 h2, .semestre-7 h2, .semestre-9 h2 { background-color: #77dd77; }
+
+.semestre-2, .semestre-4, .semestre-6, .semestre-8, .semestre-10 { background-color: #d4e4ed; }
+.semestre-2 h2, .semestre-4 h2, .semestre-6 h2, .semestre-8 h2, .semestre-10 h2 { background-color: #aec6cf; }
