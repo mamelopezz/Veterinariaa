@@ -1,0 +1,38 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 20px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+.semestre-I { background-color: #e3f2fd; }
+.semestre-II { background-color: #e8f5e9; }
+.semestre-III { background-color: #fff3e0; }
+.semestre-IV { background-color: #f3e5f5; }
+.semestre-V { background-color: #ede7f6; }
+.semestre-VI { background-color: #fbe9e7; }
+.semestre-VII { background-color: #f0f4c3; }
+.semestre-VIII { background-color: #d7ccc8; }
+.semestre-IX { background-color: #c8e6c9; }
+.semestre-X { background-color: #ffecb3; }
+
+.ramo.locked {
+    opacity: 0.4;
+    pointer-events: none;
+}
+.ramo.unlocked {
+    cursor: pointer;
+}
