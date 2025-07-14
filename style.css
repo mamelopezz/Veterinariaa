@@ -39,6 +39,8 @@ h1 {
     margin-bottom: 15px;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    cursor: pointer;
+    position: relative;
 }
 
 .asignatura h3 {
@@ -58,3 +60,29 @@ h1 {
 
 .semestre-2, .semestre-4, .semestre-6, .semestre-8, .semestre-10 { background-color: #d4e4ed; }
 .semestre-2 h2, .semestre-4 h2, .semestre-6 h2, .semestre-8 h2, .semestre-10 h2 { background-color: #aec6cf; }
+
+/* Estilos para estados de asignatura */
+.asignatura.aprobado {
+    background-color: #a9a9a9; /* Gris oscuro */
+}
+
+.asignatura.aprobado::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: black;
+    transform: rotate(-45deg);
+}
+
+
+.asignatura.bloqueado {
+    background-color: #e0e0e0; /* Gris claro */
+    cursor: not-allowed;
+}
+
+.asignatura.bloqueado h3, .asignatura.bloqueado p {
+    color: #a0a0a0;
+}
